@@ -1,0 +1,257 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  font-weight: 300;
+  text-align: center;
+  font-family: 'Open Sans',Arial,Helvetica Neue,sans-serif;
+  letter-spacing: 0.4px;
+}
+
+li { font-size: 0.9em; text-align: left; margin-bottom: 7px; }
+html, body {height: 100%; width: 100%; }
+body {color: #404348; }
+h1, h2, h3, h4, p, small {margin: 10px 10px 5px 10px; }
+p, small {margin: 10px 10px 5px 10px; }
+
+
+
+a {
+    color: #428bca;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 1.5px;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #428bca;
+}
+
+a:hover { border-bottom: 1px dashed #428bca; }
+
+.dash { height: 1px; width: 30%; background: black; margin: 20px auto; }
+
+.header {
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+}
+
+.hero { height: 67%; width: 100%; }
+#intro {
+  width: 100%;
+  height:0%;
+  color: white;
+  z-index: 9999;
+  background: none;
+  position: relative;
+  padding: 2% 1% 1% 0;
+  user-select: none;
+}
+#intro h1 { font-size: 2.5em; font-weight: 300; padding-bottom: 0px; user-select: none; }
+#intro h4 { font-size: 1.0em; font-weight: 200; user-select: none; }
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 67%;
+  margin: 0 0 0 0;
+  background-color: black;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+
+#about {padding: 5% 10% 10% 10%; }
+#about div h1 {padding: 4% 10% 1% 10%; }
+#about p {
+    color: #666666;
+    margin: 0 auto;
+    font-size: 1.2em;
+    letter-spacing: 0.04em;
+    line-height: 1.5em;
+    font-weight: 300;
+}
+
+.pulse {color: #428bca; height: auto;}
+
+#iprince img {
+  width: 25%;
+  border-radius: 50%;
+  padding: 10px;
+  min-width: 200px;
+  min-height: 200px;
+  max-width: 300px;
+  max-height: 300px;
+  user-select: none;
+}
+
+h5 {
+    font-style: normal;
+    letter-spacing: 3px;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+#logo img {
+  width: 25%;
+  padding: 10px;
+  min-width: 223px;
+  min-height: 100px;
+  max-width: 268px;
+  max-height: 120px;
+  opacity: 0.9;
+}
+
+
+#dysection { position: relative; width: 360px; height: 252px; margin:auto; }
+#dynamic {
+    background-size: cover;
+    position: absolute;
+    width: 360px;
+    height: 252px;
+    margin: auto;
+    align-self: center;
+}
+#zero {width: 360px; height: 252px; margin:0%;}
+#zero1 {width: 360px; height: 252px; margin:0%; display: none;}
+#zero3 {width: 360px; height: 252px; margin:0%; display: none;}
+
+#dynamic-content {
+  //font-size: 3.5px;
+  font-size: 3.0px;
+  font-weight: 400;
+  font-family: monospace;
+  //white-space: pre;
+  height: 38px;
+  width: 58px;
+  line-height: 4px;
+  overflow: hidden;
+  word-wrap: break-word;
+  position: absolute;
+  //right: 297px;
+  right: 113px;
+  tab-size: 2;
+  -moz-tab-size: 2;
+  -o-tab-size: 2;
+  transform: rotateX(5deg) rotateY(5deg) rotateZ(5deg) skew(-3.7deg) ;
+  top: 18px;
+  word-spacing: 0;
+  background-color: black;
+  color: white;
+  text-align: left;
+}
+
+#work { padding: 30px 20px 30px; color: #9c9c9c; background: #363636; }
+#work h1 {font-size: 2em; margin: 35px 0 35px; text-align: left; }
+#work h3 {font-size: 1.2em; margin-top: 40px; margin-bottom: 20px; text-align: left; color: #428bca; }
+#work h4 {font-size: 0.7em; margin-top: 0; margin-bottom: 10px; text-align: left; }
+.work1 ul li {font-size: 0.9em; text-align: left; }
+
+#skills { float: left; width: 100%; padding: 30px 20px 30px; background-color: #191919;}
+#skills h1 {font-size: 2em; margin: 0 0 35px; text-align: left; color: #aaaaaa; }
+#skills h2 {font-size: 1.5em; margin: 0 20px 25px; text-align: left; }
+
+#bar1 div, #bar2 div { margin: 7px 20px; text-align: left; }
+#bar1 h2, #bar2 h2 { color: #428bca; }
+#bar1 { float: left; width: 95%; font-size: 0.9em; text-transform: uppercase; letter-spacing: 2px; text-align: left; margin-bottom: 15px; color: #aaaaaa; }
+#bar2 { float: left; width: 95%; font-size: 0.9em; text-transform: uppercase; letter-spacing: 2px; text-align: left; margin-bottom: 15px; color: #aaaaaa; }
+
+
+.vba-quotes { background: #ddd; padding: 30px 20px 30px; width: 100%; clear: both; }
+.vba-quotes h1 { font-size: 2em; margin: 35px 0 35px; text-align: left; }
+#list1 li {font-size: 0.9em; text-align: left; }
+.left-karo {text-align: left; margin-top: 5px; margin-bottom: 15px; }
+
+
+
+#interests * {text-align: center; }
+#interests { padding-top: 70px; padding-bottom: 70px; background: white; position: relative; text-align: center; border-color: white; position: relative; }
+#interests h1 { margin-bottom: 35px; font-size: 1.5em; font-weight: 300; color: gray; letter-spacing: 0.2em; }
+#interests .bold { font-weight: 600; }
+#interests i { font-size: 4em; color: #737373; }
+#interests .row .column { padding: 30px; border-left: 1px solid #ebebeb; }
+#interests .row .column:first-of-type { border-left: none; }
+#interests h3 { font-weight: 400; color: #4c4c4c; letter-spacing: 0.2em; font-size: 1.4em; padding-bottom: 10px; }
+#interests p { color: #595959; padding-top: 0px; padding-bottom: 6px; font-size: 1.1em; letter-spacing: 1px; font-weight: 300; font-size: 15px; line-height: 25px; }
+#interests .dash { background: lightgray; }
+
+
+#contact { padding-top: 50px; padding-bottom: 20px; position: relative; border-color: whitesmoke; background: whitesmoke; color: gray; text-align: center; }
+//#contact { padding-top: 50px; padding-bottom: 20px; border-color: whitesmoke; background: whitesmoke; color: gray; text-align: center; }
+#contact h1 { color: grey; font-weight: 300; font-size: 1.5em; text-transform: uppercase; letter-spacing: 3px; margin: 10px 0 20px; }
+#contact h1 div { display: inline-block; }
+#contact p { font-size: 1.0em; font-weight: 300; letter-spacing: 1px; margin: 30px auto 35px; max-width: 500px; }
+#contact a.contact { padding: 8px 15px; border: 1px solid lightgray; border-radius: 3px; font-size: 1.4em; font-weight: 300; letter-spacing: 1px; color: #6c6c6c; }
+#contact a.contact i { margin-left: 10px; font-size: 20px; }
+#contact a.contact:hover { color: white; background: #428bca; border: 1px solid gray; }
+
+
+#footer { padding: 65px 0 100px; background: #ECECEC; text-align: center; font-weight: 300; }
+#footer h3 { font-size: 1.2em; margin-bottom: 30px; color: gray; }
+//#footer h4 { margin-bottom: 25px; }
+#footer ul { list-style: none; padding: 0; }
+#footer ul li { display: inline-block; min-width: 50px; min-height: 75px; margin: 0 30px; padding: 0 30px; position: relative; }
+#footer ul li a {color: lightgray; border-bottom: none;}
+#footer ul li a p { position: absolute; font-weight: 400; letter-spacing: 1px; display: none; left: 0; right: 0; margin: auto; margin-top: 10px; }
+#footer .license { font-family: Georgia, sans-serif; color: #bdbdbd; letter-spacing: 1px; font-size: 12px; margin-top: 20px; }
+#footer .license:hover { border-bottom: 0.6px solid #bdbdbd; color: #9c9c9c; }
+
+
+/* iphone 5 only Mobile ----------- */
+@media only screen and (max-width: 320px) {
+  #dysection { position: relative; width: 310px; height: 217px; margin:auto; }
+  #dynamic {
+      background-size: cover;
+      position: absolute;
+      width: 310px;
+      height: 217px;
+      margin: auto;
+      //margin: 0;
+      align-self: center;
+  }
+  #zero {width: 310px; height: 217px; margin:0%;}
+  #zero1 {width: 310px; height: 217px; margin:0%; display: none;}
+  #zero3 {width: 310px; height: 217px; margin:0%; display: none;}
+
+  #dynamic-content {
+    font-size: 3px;
+    height: 33px;
+    width: 50px;
+    line-height: 4px;
+    font-weight: 100;
+    font-family: monospace;
+    overflow: hidden;
+    word-wrap: break-word;
+    position: absolute;
+    right: 96px;
+    tab-size: 2;
+    -moz-tab-size: 2;
+    -o-tab-size: 2;
+    transform: rotateX(5deg) rotateY(5deg) rotateZ(5deg) skew(-3.7deg) ;
+    top: 14px;
+    word-spacing: 0;
+    background-color: black;
+    color: white;
+    text-align: left;
+  }
+
+}
+
+
+/* Mobile ----------- */
+@media only screen and (min-width: 667px) {
+  #bar1 { float: left; width: 49%; }
+  #bar2 { float: right; width: 49%; }
+  .container {width: 85%; margin: auto; }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1024px) {
+  #bar1 { float: left; width: 45%; }
+  #bar2 { float: right; width: 45%; }
+  .container {width: 70%; margin: auto; }
+}
