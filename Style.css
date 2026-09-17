@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+
+:root {
+  --ink: #1f2933;
+  --muted: #69727d;
+  --accent: #9b5d38;
+  --accent-dark: #75432a;
+  --paper: #fffdf9;
+  --soft: #f3eee7;
+  --line: #e5ddd3;
+  --shadow: 0 24px 70px rgba(45, 35, 28, .12);
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at 10% 10%, rgba(155,93,56,.08), transparent 28%),
+    radial-gradient(circle at 90% 80%, rgba(31,41,51,.06), transparent 30%),
+    #ece8e2;
+  color: var(--ink);
+  font-family: "DM Sans", Arial, sans-serif;
+  line-height: 1.65;
+}
+
+.resume {
+  width: min(1100px, calc(100% - 32px));
+  margin: 40px auto;
+  background: var(--paper);
+  box-shadow: var(--shadow);
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 190px;
+  gap: 40px;
+  padding: 58px 64px 50px;
+  background:
+    linear-gradient(135deg, rgba(155,93,56,.10), transparent 58%),
+    var(--paper);
+  border-bottom: 1px solid var(--line);
+}
+
+.eyebrow {
+  margin: 0 0 12px;
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .22em;
+}
+
+h1 {
+  margin: 0;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(46px, 7vw, 78px);
+  line-height: 1;
+  letter-spacing: -.035em;
+  color: #17202a;
+}
+
+.role {
+  margin: 17px 0 28px;
+  color: var(--muted);
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.contact-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+}
+
+.contact-grid a,
+.contact-grid span {
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.contact-grid a:hover { color: var(--accent); }
+
+.photo-frame {
+  justify-self: end;
+  width: 180px;
+  height: 220px;
+  padding: 8px;
+  background: white;
+  border: 1px solid var(--line);
+  box-shadow: 0 12px 35px rgba(0,0,0,.10);
+  transform: rotate(1.5deg);
+}
+
+.photo-frame img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.section {
+  padding: 38px 64px;
+  border-bottom: 1px solid var(--line);
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+.section-heading .number {
+  display: inline-grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .04em;
+}
+
+h2 {
+  margin: 0;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 28px;
+  line-height: 1.2;
+}
+
+.objective p {
+  max-width: 850px;
+  margin: 0;
+  font-size: 17px;
+  color: #39434d;
+}
+
+.strengths {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.strengths article {
+  display: grid;
+  grid-template-columns: 38px 1fr;
+  gap: 12px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: #fff;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.strengths article:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(50,40,30,.08);
+}
+
+.strengths article span {
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.strengths p {
+  margin: 0;
+  color: #46515b;
+  font-size: 14px;
+}
+
+.education-list {
+  border-left: 2px solid var(--line);
+  margin-left: 16px;
+}
+
+.education-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 85px 1fr;
+  gap: 20px;
+  padding: 5px 0 25px 30px;
+}
+
+.education-item:last-child { padding-bottom: 0; }
+
+.education-item::before {
+  content: "";
+  position: absolute;
+  left: -7px;
+  top: 9px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 4px solid var(--paper);
+  box-shadow: 0 0 0 1px var(--accent);
+}
+
+.year {
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .04em;
+}
+
+.education-item h3 {
+  margin: 0 0 3px;
+  font-size: 16px;
+}
+
+.education-item p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+}
+
+.details > div {
+  display: grid;
+  grid-template-columns: 145px 1fr;
+  gap: 12px;
+  padding: 14px 16px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.details span {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.details strong {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.declaration {
+  padding: 38px 64px 44px;
+}
+
+.declaration p {
+  margin: 0 0 8px;
+  color: #4b5560;
+  font-size: 13px;
+}
+
+.declaration p strong {
+  color: var(--ink);
+  font-size: 15px;
+}
+
+.signature-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 48px;
+  color: #505861;
+  font-size: 13px;
+}
+
+.signature {
+  min-width: 170px;
+  text-align: center;
+  padding-top: 30px;
+  border-top: 1px solid #777;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 17px 64px;
+  background: var(--soft);
+  color: var(--muted);
+  font-size: 11px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 760px) {
+  .resume {
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 42px 26px;
+  }
+
+  .photo-frame {
+    justify-self: start;
+    width: 145px;
+    height: 180px;
+    order: -1;
+  }
+
+  .section, .declaration {
+    padding-left: 26px;
+    padding-right: 26px;
+  }
+
+  .strengths,
+  .details {
+    grid-template-columns: 1fr;
+  }
+
+  .details > div {
+    grid-template-columns: 125px 1fr;
+  }
+
+  .signature-row {
+    gap: 30px;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .signature { align-self: flex-end; }
+
+  footer {
+    padding-left: 26px;
+    padding-right: 26px;
+  }
+}
+
+@media print {
+  @page { size: A4; margin: 10mm; }
+
+  body { background: white; }
+
+  .resume {
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .strengths article:hover { transform: none; box-shadow: none; }
+  .hero, .section, .declaration { break-inside: avoid; }
+  a { color: inherit; }
+}
